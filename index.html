@@ -1,31 +1,39 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  
-		<strong>Bubu kicks ass!</strong>
-		<strong>Bubu sagt servus!</strong>
-	</section>
-	<section id="pageContent">
-		<main role="main">
-			<article>
-				<h2>Was geht ab?</h2>
-				<p>:-)</p>
-			
-		</main>
-		<aside>
-			<div>Sidebar 1</div>
-			<div>Sidebar 2</div>
-			<div>Sidebar 3</div>
-		</aside>
-	</section>
-	<footer>
-		<p>&copy; JoBubu | <a href="https://t82t.github.io/test/" target="_blank" rel="nofollow">Bubus place</a></p>
-		<address>
-			Contact: <a href="mailto:me@bubu.eu">Mail me</a>
-		</address>
-	</footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservierung in Tannheim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reservierung in Tannheim</h1>
+    </header>
 
+    <main>
+        <section class="reservation-form">
+            <h2>Resevierung durchführen</h2>
+            <form id="reservationForm">
+                <label for="name">Gäste:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="comments">Besondere Wünsche:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Abschicken</button>
+            </form>
+            <div id="notification" class="notification"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Bubu.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
